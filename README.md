@@ -8,7 +8,7 @@ Simple command line utility which facilitates automating zsh/bash/sh scripts
 
 Via last command:
 
-```
+```bash
 ➜  ~ echo "foo"
 foo
 ➜  ~ savescript foo
@@ -18,7 +18,7 @@ foo
 
 Via pipe:
 
-```
+```bash
 ➜  ~ echo "bar" | savescript bar
 ➜  ~ bar
 bar
@@ -26,8 +26,9 @@ bar
 
 ### First Time Usage
 
-```
-➜  ~ npm i -g savescript
+```bash
+➜  ~ sudo npm i -g savescript
+...
 ➜  ~ echo "my first script"
 my first script
 ➜  ~ savescript first-script
