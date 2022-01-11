@@ -1,6 +1,6 @@
 {
   "name": "savescript",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "save command line scripts with ease",
   "main": "index.js",
   "bin": {

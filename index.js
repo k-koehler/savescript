@@ -7,7 +7,7 @@ const readline = require("readline");
 const ttys = require("ttys");
 
 const homeDir = os.homedir();
-const binDir = path.join(homeDir, ".saveas");
+const binDir = path.join(homeDir, ".savescript");
 
 function getHistoryFile() {
   if (process.env.SHELL.includes("zsh")) {
@@ -67,7 +67,7 @@ function question(q) {
 
 // three possibilities:
 // 0. invalid syntax
-// 1. saveas has never been invoked
+// 1. savescript has never been invoked
 //   -> create BIN_DIR and export it to path
 //   -> save the script
 //   -> tell the user to refresh their shell
@@ -78,7 +78,7 @@ function question(q) {
 
 (async function main() {
   if (process.argv.length < 3) {
-    err("Invalid syntax. Usage: saveas <filename>");
+    err("Invalid syntax. Usage: savescript <filename>");
     process.exit(1);
   }
 
@@ -97,7 +97,7 @@ function question(q) {
     fs.mkdirSync(binDir);
     message = () =>
       warn(
-        `First time running saveas detected. Please type "source ${profileFile}" or reload your shell.`
+        `First time running savescript detected. Please type "source ${profileFile}" or reload your shell.`
       );
   }
 

@@ -31,7 +31,7 @@ bar
 ➜  ~ echo "my first script"
 my first script
 ➜  ~ savescript first-script
- First time running saveas detected. Please type "source /home/kev/.zshrc" or reload your shell.
+ First time running savescript detected. Please type "source /home/kev/.zshrc" or reload your shell.
 ➜  ~ source /home/kev/.zshrc
 ➜  ~ first-script
 my first script
